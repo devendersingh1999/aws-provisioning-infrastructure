@@ -44,3 +44,9 @@ variable "db_subnet_group_name" {
   type        = string
   default     = "my-db-subnet-group"
 }
+
+variable "db_vpc_security_group_ids" {    
+  description = "A list of VPC security group IDs to associate with the database."
+  type        = list(string)
+  default     = []
+}
