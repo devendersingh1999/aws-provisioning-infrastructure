@@ -1,8 +1,8 @@
 output "vpc_id" {
-  value = aws_vpc.public_subnets.id
+  value = aws_vpc.public_subnets[*].id
 } 
 output "vpc_cidr" {
-  value = aws_vpc.public_subnets.cidr_block
+  value = aws_vpc.public_subnets[*].cidr_block
 }
 
 output "subnet_ids" {
